@@ -32,6 +32,8 @@ public class SineWave : MonoBehaviour
             float y = amplitude * Mathf.Sin((Tau * frequency * x) + (Time.timeSinceLevelLoad * movementSpeed));
             myLineRenderer.SetPosition(currentPoint, new Vector3(x, y, 0));
         }
+
+        amplitude = Mathf.Clamp(amplitude, 0, 0.06f);
     }
 
     void Update()
