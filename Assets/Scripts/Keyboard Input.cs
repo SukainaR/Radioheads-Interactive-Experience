@@ -10,6 +10,7 @@ public class KeyboardInput : MonoBehaviour
     public float inputMultiplier;
     public float debug;
     [SerializeField] private Animator myanimator;
+    //[SerializeField] private GameObject panel;
     
 
     void Start()
@@ -29,6 +30,7 @@ public class KeyboardInput : MonoBehaviour
             print("test");
             
         }
+     
         debug = Mathf.Abs(wavematching.GetComponent<SineWave>().amplitude - wavestationary.GetComponent<SineWave>().amplitude);
     }
 }
