@@ -2622,7 +2622,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 192
   field of view: 114.4
   orthographic: 0
   orthographic size: 5
@@ -4359,7 +4359,29 @@ MonoBehaviour:
   - {fileID: 129449084}
   - {fileID: 218707517}
   - {fileID: 1552076290}
-  points: []
+  points:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!114 &1945194556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4374,7 +4396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   port: 5052
   startReceiving: 1
-  printToConsole: 0
+  printToConsole: 1
   data: 
 --- !u!1 &1993512998
 GameObject:
