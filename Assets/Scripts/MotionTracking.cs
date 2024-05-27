@@ -26,7 +26,7 @@ public class MotionTracking : MonoBehaviour
 
             float z = 0;
 
-            bodyPoints[i].transform.localPosition = new Vector3(x, y, z);
+            bodyPoints[i].transform.localPosition = new Vector3(x, y, 0);
         }
 
     }

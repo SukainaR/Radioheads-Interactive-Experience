@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PanelTransition : MonoBehaviour
 {
-    [SerializeField] private GameObject paneltoActivate;
-    [SerializeField] private GameObject paneltoDeactivate;
+    [SerializeField] private GameObject objectToDeactivate;
+    [SerializeField] private GameObject objectToActivate;
 
-    public void TransitiontoNextPanel()
+    public void TransitionToNextPanel()
     {
-        paneltoActivate.SetActive(true);
-        paneltoDeactivate.SetActive(false);
+        objectToDeactivate.SetActive(false);
+        objectToActivate.SetActive(true);
     }
 }
