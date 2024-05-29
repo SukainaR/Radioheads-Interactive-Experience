@@ -19,7 +19,7 @@ public class Win : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(( sineWave.amplitude < 0.029 ) && (sineWave.amplitude > 0.02) )
+        if(( sineWave.amplitude < 0.039 ) && (sineWave.amplitude > 0.03) )
         {
             objectsToDeactivate.SetActive(false);
             objectsToActivate.SetActive(true);
