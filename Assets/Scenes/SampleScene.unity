@@ -1592,7 +1592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myLineRenderer: {fileID: 447219276}
   points: 37
-  amplitude: 0.01
+  amplitude: 0.03
   frequency: 5.54
   xLimits: {x: 0.24, y: 5.66}
   movementSpeed: 2.74
@@ -2551,7 +2551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myLineRenderer: {fileID: 760905201}
   points: 37
-  amplitude: 0.03
+  amplitude: 0.06
   frequency: 5.54
   xLimits: {x: 0.24, y: 5.66}
   movementSpeed: 2.74
@@ -4975,7 +4975,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1486143810}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1486143812}
+        m_TargetAssemblyTypeName: PanelTransition, Assembly-CSharp
+        m_MethodName: TransitionToNextPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1486143810
 MonoBehaviour:
   m_ObjectHideFlags: 0
