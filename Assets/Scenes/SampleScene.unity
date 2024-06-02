@@ -1556,6 +1556,7 @@ GameObject:
   - component: {fileID: 447219276}
   - component: {fileID: 447219275}
   - component: {fileID: 447219277}
+  - component: {fileID: 447219278}
   m_Layer: 0
   m_Name: Line (1)
   m_TagString: Untagged
@@ -1717,6 +1718,27 @@ MonoBehaviour:
   sineWave: {fileID: 447219275}
   objectsToActivate: {fileID: 1555153859}
   objectsToDeactivate: {fileID: 809701628}
+--- !u!114 &447219278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447219273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5b503599c0b2f4187a20223b4bfac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 1911670390}
+  handSlider: {fileID: 1120296759}
+  initialPosition: {x: 0, y: 0, z: 0}
+  sliderMinX: 0
+  sliderMaxX: 10
+  customMaxValue: 10
+  sineWave: {fileID: 447219275}
+  customMaxSliderValue: 0.007
+  customMinSliderVlaue: 0
 --- !u!4 &584139357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 891345f9d65e7e34abde67006f164303, type: 3}
@@ -4147,7 +4169,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 10
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 4.36
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7097,7 +7119,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945194552}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d5b503599c0b2f4187a20223b4bfac7, type: 3}
   m_Name: 
@@ -7109,6 +7131,8 @@ MonoBehaviour:
   sliderMaxX: 10
   customMaxValue: 10
   sineWave: {fileID: 447219275}
+  customMaxSliderValue: 0
+  customMinSliderVlaue: 0
 --- !u!114 &1945194558
 MonoBehaviour:
   m_ObjectHideFlags: 0
