@@ -4146,7 +4146,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 10
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6964,6 +6964,7 @@ GameObject:
   - component: {fileID: 1945194555}
   - component: {fileID: 1945194557}
   - component: {fileID: 1945194558}
+  - component: {fileID: 1945194559}
   m_Layer: 0
   m_Name: InputManager
   m_TagString: Untagged
@@ -6978,7 +6979,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945194552}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c480bc17a780bc4e9aca08dedc2db1d, type: 3}
   m_Name: 
@@ -7101,11 +7102,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d5b503599c0b2f4187a20223b4bfac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 1675666263}
+  hand: {fileID: 1911670390}
   handSlider: {fileID: 1120296759}
   initialPosition: {x: 0, y: 0, z: 0}
   sliderMinX: 0
   sliderMaxX: 10
+  customMaxValue: 10
+  sineWave: {fileID: 447219275}
 --- !u!114 &1945194558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7133,6 +7136,20 @@ MonoBehaviour:
   waitTime: 3
   currentActive: 0
   startDesactivating: 0
+--- !u!114 &1945194559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945194552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1abc77795c3b940a4cf4b4d88f87ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: 0
+  sineWave: {fileID: 447219275}
 --- !u!1 &1963086784
 GameObject:
   m_ObjectHideFlags: 0

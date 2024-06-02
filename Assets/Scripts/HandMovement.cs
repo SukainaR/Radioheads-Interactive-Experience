@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,10 @@ public class HandMovement : MonoBehaviour
     [SerializeField] private float sliderMinX;
     [SerializeField] private float sliderMaxX;
     [SerializeField] private float customMaxValue = 1.0f;
+
+    [SerializeField] private SineWave sineWave;
+    [SerializeField] private float customMaxSliderValue;
+    [SerializeField] private float customMinSliderVlaue=0f;
 
     public void setInitialPosition()
     {
@@ -25,6 +30,8 @@ public class HandMovement : MonoBehaviour
     {
         setInitialPosition();
         Debug.Log("Initial position set to: " + initialPosition);
+
+        sineWave = GetComponent<SineWave>();
     }
 
     // Update is called once per frame
@@ -39,6 +46,8 @@ public class HandMovement : MonoBehaviour
             Debug.Log("Calculated slider value: " + sliderValue);
 
             handSlider.value = sliderValue;
+
+            SliderToAmplitude();
         }
     }
 
@@ -58,4 +67,14 @@ public class HandMovement : MonoBehaviour
 
         return sliderValue;
     }
+
+    public void SliderToAmplitude()
+    {
+        if (sineWave != null)
+        {
+            sineWave.amplitude = handSlider.value * customMaxSliderValue;
+            
+        }
+    }
+
 }

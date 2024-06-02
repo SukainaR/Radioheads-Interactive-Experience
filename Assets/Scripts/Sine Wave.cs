@@ -7,7 +7,7 @@ public class SineWave : MonoBehaviour
 {
     public LineRenderer myLineRenderer;
     public int points;
-    public float amplitude = 1;
+    public float amplitude = 1.0f;
     public float frequency = 1;
     public Vector2 xLimits = new Vector2(0, 1);
     public float movementSpeed = 1;
