@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Win : MonoBehaviour
 {
-    [SerializeField] private float amp;
+    
     [SerializeField] private SineWave sineWave;
+    [SerializeField] private float ampMin;
+    [SerializeField] private float ampMax;
 
     [SerializeField] private GameObject objectsToActivate;
     [SerializeField] private GameObject objectsToDeactivate;
@@ -19,7 +21,7 @@ public class Win : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(( sineWave.amplitude < 0.069 ) && (sineWave.amplitude > 0.06) )
+        if(( sineWave.amplitude < ampMax ) && (sineWave.amplitude > ampMin) )
         {
             objectsToDeactivate.SetActive(false);
             objectsToActivate.SetActive(true);
