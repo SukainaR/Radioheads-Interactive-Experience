@@ -11,6 +11,9 @@ public class Win : MonoBehaviour
 
     [SerializeField] private GameObject objectsToActivate;
     [SerializeField] private GameObject objectsToDeactivate;
+    [SerializeField] private Animator animationToPlay;
+
+    [SerializeField] private float timer = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +26,15 @@ public class Win : MonoBehaviour
     {
         if(( sineWave.amplitude < ampMax ) && (sineWave.amplitude > ampMin) )
         {
-            objectsToDeactivate.SetActive(false);
-            objectsToActivate.SetActive(true);
+            //Put it's Animator with animation here
+            animationToPlay.SetBool("Play Animation", true);
+
+            timer -= Time.deltaTime;
+            if( timer < 0)
+            {
+                objectsToDeactivate.SetActive(false);
+                objectsToActivate.SetActive(true);
+            }
         }
     }
 }
