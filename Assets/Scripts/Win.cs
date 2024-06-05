@@ -15,6 +15,7 @@ public class Win : MonoBehaviour
 
     [SerializeField] private float timer = 1;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +25,9 @@ public class Win : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(( sineWave.amplitude < ampMax ) && (sineWave.amplitude > ampMin) )
+        if( ( sineWave.amplitude < ampMax ) && (sineWave.amplitude > ampMin) )
         {
+            
             //Put it's Animator with animation here
             animationToPlay.SetBool("Play Animation", true);
 
